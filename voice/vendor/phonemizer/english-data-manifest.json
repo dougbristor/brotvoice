@@ -1,0 +1,79 @@
+{
+  "package": "@diffusionstudio/piper-wasm@1.0.0",
+  "originalBytes": 18077249,
+  "englishBytes": 838072,
+  "originalSha256": "29f1025eb23a5b5c192cd14a6efbce4509402ff265405072ee6f7d1a09b78f8c",
+  "englishSha256": "8b009e0567b18a3374d39507fe09e8c63c395c3d4ea59e5e81f965bd247c584b",
+  "files": [
+    {
+      "filename": "/espeak-ng-data/en_dict",
+      "start": 0,
+      "end": 166944
+    },
+    {
+      "filename": "/espeak-ng-data/intonations",
+      "start": 166944,
+      "end": 168984
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en",
+      "start": 168984,
+      "end": 169124
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-029",
+      "start": 169124,
+      "end": 169459
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-GB-scotland",
+      "start": 169459,
+      "end": 169754
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-GB-x-gbclan",
+      "start": 169754,
+      "end": 169992
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-GB-x-gbcwmd",
+      "start": 169992,
+      "end": 170180
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-GB-x-rp",
+      "start": 170180,
+      "end": 170429
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-US",
+      "start": 170429,
+      "end": 170686
+    },
+    {
+      "filename": "/espeak-ng-data/lang/gmw/en-US-nyc",
+      "start": 170686,
+      "end": 170957
+    },
+    {
+      "filename": "/espeak-ng-data/phondata",
+      "start": 170957,
+      "end": 721381
+    },
+    {
+      "filename": "/espeak-ng-data/phondata-manifest",
+      "start": 721381,
+      "end": 743202
+    },
+    {
+      "filename": "/espeak-ng-data/phonindex",
+      "start": 743202,
+      "end": 782276
+    },
+    {
+      "filename": "/espeak-ng-data/phontab",
+      "start": 782276,
+      "end": 838072
+    }
+  ]
+}

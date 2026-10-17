@@ -1,0 +1,2928 @@
+{
+  "source": "en_GB-northern_english_male-medium.onnx",
+  "sourceSha256": "57a219ae8e638873db7d18893304be5069c42868f392bb95c3ff17f0690d0689",
+  "candidates": [
+    {
+      "precision": "fp16",
+      "file": "en_GB-northern_english_male-medium-fp16weights.onnx",
+      "bytes": 32011207,
+      "sourceBytes": 63201294,
+      "ratio": 0.5064960695266777,
+      "sha256": "b63522fb59762d697ce19531028babbe747aa8b2bfa03eceff43c826dd030ddf",
+      "changedElements": 15605728,
+      "note": "Storage precision only. Float32 inference; no speed/memory reduction claimed.",
+      "weights": [
+        {
+          "name": "sid",
+          "shape": [
+            256,
+            192
+          ],
+          "maxAbs": 0.00018894672393798828,
+          "relativeRms": 0.0002053023629925587
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0008311271667480469,
+          "relativeRms": 0.00020497705115654757
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0004826784133911133,
+          "relativeRms": 0.00021071387416302212
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011390447616577148,
+          "relativeRms": 0.00020598094025315423
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 9.322166442871094e-05,
+          "relativeRms": 0.00020153949049114383
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011470913887023926,
+          "relativeRms": 0.0002063185958371249
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0001875162124633789,
+          "relativeRms": 0.0002081304597662052
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00046622753143310547,
+          "relativeRms": 0.00020404752701632707
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00028383731842041016,
+          "relativeRms": 0.00019303433264963188
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00022047758102416992,
+          "relativeRms": 0.00020774260019073166
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00014913082122802734,
+          "relativeRms": 0.00020722523216302178
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0001195371150970459,
+          "relativeRms": 0.00020746217057566874
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012168288230895996,
+          "relativeRms": 0.0002076895867614261
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0009191036224365234,
+          "relativeRms": 0.0002143080410811263
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00043070316314697266,
+          "relativeRms": 0.00020023773524417753
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0001220703125,
+          "relativeRms": 0.00020932784803458278
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00022733211517333984,
+          "relativeRms": 0.0002086024282430271
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011327862739562988,
+          "relativeRms": 0.0002093308478444098
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00010761618614196777,
+          "relativeRms": 0.00020790874527159897
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0009162425994873047,
+          "relativeRms": 0.00020056599493507892
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00037384033203125,
+          "relativeRms": 0.00020648856624897355
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00023663043975830078,
+          "relativeRms": 0.0002078115229736153
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002048015594482422,
+          "relativeRms": 0.00020691206075781375
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 9.828805923461914e-05,
+          "relativeRms": 0.0002082165356625308
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011795759201049805,
+          "relativeRms": 0.00020749549481160643
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0009558200836181641,
+          "relativeRms": 0.00021009855639321187
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0004495382308959961,
+          "relativeRms": 0.0002105682689980776
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00023120641708374023,
+          "relativeRms": 0.00020784816078836567
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002009868621826172,
+          "relativeRms": 0.00020724637428842666
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011706352233886719,
+          "relativeRms": 0.00020815596057910876
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011944770812988281,
+          "relativeRms": 0.0002081592130996717
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00048673152923583984,
+          "relativeRms": 0.00019722121627354175
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00022649765014648438,
+          "relativeRms": 0.00020180614592734636
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00024116039276123047,
+          "relativeRms": 0.0002064186733743122
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002435445785522461,
+          "relativeRms": 0.00020674153615560668
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011643767356872559,
+          "relativeRms": 0.00020707140893464442
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012090802192687988,
+          "relativeRms": 0.0002073584373702264
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.0.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.00012165307998657227,
+          "relativeRms": 0.00020713981571285578
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.0.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.00012165307998657227,
+          "relativeRms": 0.0002076900593461436
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.1.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.00012156367301940918,
+          "relativeRms": 0.00020739181786646563
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.1.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0002295374870300293,
+          "relativeRms": 0.0002074685450235371
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.2.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.00012180209159851074,
+          "relativeRms": 0.00020698115004919634
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.2.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0008981227874755859,
+          "relativeRms": 0.00020830111009098227
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.3.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.00012186169624328613,
+          "relativeRms": 0.0002066073797379558
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.3.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0004507303237915039,
+          "relativeRms": 0.0002069892930344942
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.4.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0001220405101776123,
+          "relativeRms": 0.00020762831961866447
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.4.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.00040793418884277344,
+          "relativeRms": 0.0002067016043249277
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.5.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.00012192130088806152,
+          "relativeRms": 0.0002074751066677521
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.5.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0004763603210449219,
+          "relativeRms": 0.00020834420065407976
+        },
+        {
+          "name": "enc_p.proj.weight",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0009562969207763672,
+          "relativeRms": 0.00020875435696244342
+        },
+        {
+          "name": "dec.conv_pre.weight",
+          "shape": [
+            256,
+            192,
+            7
+          ],
+          "maxAbs": 0.0003657341003417969,
+          "relativeRms": 0.00020776035002227698
+        },
+        {
+          "name": "dec.ups.0.weight",
+          "shape": [
+            256,
+            128,
+            16
+          ],
+          "maxAbs": 6.03795051574707e-05,
+          "relativeRms": 0.00020816371159057754
+        },
+        {
+          "name": "dec.ups.1.weight",
+          "shape": [
+            128,
+            64,
+            16
+          ],
+          "maxAbs": 5.640089511871338e-05,
+          "relativeRms": 0.00020570567132061676
+        },
+        {
+          "name": "dec.ups.2.weight",
+          "shape": [
+            64,
+            32,
+            8
+          ],
+          "maxAbs": 0.00012001395225524902,
+          "relativeRms": 0.00020974677816754475
+        },
+        {
+          "name": "dec.resblocks.0.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            3
+          ],
+          "maxAbs": 0.00024110078811645508,
+          "relativeRms": 0.00020385580627188437
+        },
+        {
+          "name": "dec.resblocks.0.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            3
+          ],
+          "maxAbs": 0.0007512569427490234,
+          "relativeRms": 0.00020932252914258095
+        },
+        {
+          "name": "dec.resblocks.1.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            5
+          ],
+          "maxAbs": 0.00024300813674926758,
+          "relativeRms": 0.00020444405535266846
+        },
+        {
+          "name": "dec.resblocks.1.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            5
+          ],
+          "maxAbs": 0.0003459453582763672,
+          "relativeRms": 0.00020689363619550024
+        },
+        {
+          "name": "dec.resblocks.2.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            7
+          ],
+          "maxAbs": 0.00024306774139404297,
+          "relativeRms": 0.00020656761026888027
+        },
+        {
+          "name": "dec.resblocks.2.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            7
+          ],
+          "maxAbs": 0.00047016143798828125,
+          "relativeRms": 0.000211248582632916
+        },
+        {
+          "name": "dec.resblocks.3.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            3
+          ],
+          "maxAbs": 0.0009398460388183594,
+          "relativeRms": 0.0002171446193073354
+        },
+        {
+          "name": "dec.resblocks.3.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            3
+          ],
+          "maxAbs": 0.0004775524139404297,
+          "relativeRms": 0.00021001382062785083
+        },
+        {
+          "name": "dec.resblocks.4.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            5
+          ],
+          "maxAbs": 0.0004830360412597656,
+          "relativeRms": 0.00020898813570399908
+        },
+        {
+          "name": "dec.resblocks.4.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            5
+          ],
+          "maxAbs": 0.00047719478607177734,
+          "relativeRms": 0.00020432445551453704
+        },
+        {
+          "name": "dec.resblocks.5.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            7
+          ],
+          "maxAbs": 0.0007312297821044922,
+          "relativeRms": 0.000205504516073117
+        },
+        {
+          "name": "dec.resblocks.5.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            7
+          ],
+          "maxAbs": 0.0008702278137207031,
+          "relativeRms": 0.00020839872827101732
+        },
+        {
+          "name": "dec.resblocks.6.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            3
+          ],
+          "maxAbs": 0.0003885030746459961,
+          "relativeRms": 0.00020258124365008195
+        },
+        {
+          "name": "dec.resblocks.6.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            3
+          ],
+          "maxAbs": 0.0003725290298461914,
+          "relativeRms": 0.0001935381641342468
+        },
+        {
+          "name": "dec.resblocks.7.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            5
+          ],
+          "maxAbs": 0.0004494190216064453,
+          "relativeRms": 0.0002114061044515341
+        },
+        {
+          "name": "dec.resblocks.7.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            5
+          ],
+          "maxAbs": 0.0004630088806152344,
+          "relativeRms": 0.00021176327173649733
+        },
+        {
+          "name": "dec.resblocks.8.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            7
+          ],
+          "maxAbs": 0.00046253204345703125,
+          "relativeRms": 0.0002025664035569894
+        },
+        {
+          "name": "dec.resblocks.8.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            7
+          ],
+          "maxAbs": 0.0003889799118041992,
+          "relativeRms": 0.00020908545586116175
+        },
+        {
+          "name": "dec.conv_post.weight",
+          "shape": [
+            1,
+            32,
+            7
+          ],
+          "maxAbs": 9.548664093017578e-05,
+          "relativeRms": 0.0002040910158289261
+        },
+        {
+          "name": "flow.flows.0.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 6.097555160522461e-05,
+          "relativeRms": 0.00021085440887463644
+        },
+        {
+          "name": "flow.flows.0.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.00036704540252685547,
+          "relativeRms": 0.00021164593921706618
+        },
+        {
+          "name": "flow.flows.2.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.00011423230171203613,
+          "relativeRms": 0.00020989950126624324
+        },
+        {
+          "name": "flow.flows.2.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.00048601627349853516,
+          "relativeRms": 0.00020570982474756537
+        },
+        {
+          "name": "flow.flows.4.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 5.8263540267944336e-05,
+          "relativeRms": 0.00020521002041711152
+        },
+        {
+          "name": "flow.flows.4.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.00023806095123291016,
+          "relativeRms": 0.00020911731967517762
+        },
+        {
+          "name": "flow.flows.6.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.00011873245239257812,
+          "relativeRms": 0.00020535645993956827
+        },
+        {
+          "name": "flow.flows.6.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.0009181499481201172,
+          "relativeRms": 0.00020705067471478116
+        },
+        {
+          "name": "dp.flows.3.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 0.00011110305786132812,
+          "relativeRms": 0.0001576576831938602
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012058019638061523,
+          "relativeRms": 0.0002061130199408245
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012183189392089844,
+          "relativeRms": 0.0002117180252408785
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012058019638061523,
+          "relativeRms": 0.00020622010243991567
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00016295909881591797,
+          "relativeRms": 0.00020627872793717563
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012195110321044922,
+          "relativeRms": 0.0002058811763522604
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012180209159851074,
+          "relativeRms": 0.0002074734937059951
+        },
+        {
+          "name": "dp.flows.3.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.0004407167434692383,
+          "relativeRms": 0.0002063029250406696
+        },
+        {
+          "name": "dp.flows.5.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 0.0001849532127380371,
+          "relativeRms": 0.00018335237727099796
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0001214742660522461,
+          "relativeRms": 0.0002043549601301506
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00011914968490600586,
+          "relativeRms": 0.00021223350251748388
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012123584747314453,
+          "relativeRms": 0.00021018675231825165
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00022536516189575195,
+          "relativeRms": 0.00020955000943043614
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012183189392089844,
+          "relativeRms": 0.00020638857278723765
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00021851062774658203,
+          "relativeRms": 0.0002065700219781159
+        },
+        {
+          "name": "dp.flows.5.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.0003418922424316406,
+          "relativeRms": 0.0002077434406078208
+        },
+        {
+          "name": "dp.flows.7.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 0.00011405348777770996,
+          "relativeRms": 0.00024142188209608418
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00011917948722839355,
+          "relativeRms": 0.00021041483152203558
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0001176595687866211,
+          "relativeRms": 0.00020052027098398643
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012055039405822754,
+          "relativeRms": 0.0002124353899731459
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00023943185806274414,
+          "relativeRms": 0.00020762307139805678
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002040266990661621,
+          "relativeRms": 0.00020687684089354944
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00012060999870300293,
+          "relativeRms": 0.00020805584025879707
+        },
+        {
+          "name": "dp.flows.7.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.0009596347808837891,
+          "relativeRms": 0.00020196234925558097
+        },
+        {
+          "name": "dp.pre.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002351999282836914,
+          "relativeRms": 0.00020734598032800242
+        },
+        {
+          "name": "dp.proj.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011137127876281738,
+          "relativeRms": 0.00020963018215751508
+        },
+        {
+          "name": "dp.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012135505676269531,
+          "relativeRms": 0.00020968498206376556
+        },
+        {
+          "name": "dp.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00012132525444030762,
+          "relativeRms": 0.0001988953790925094
+        },
+        {
+          "name": "dp.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.00011894106864929199,
+          "relativeRms": 0.00020076930733602282
+        },
+        {
+          "name": "dp.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00047779083251953125,
+          "relativeRms": 0.00021117310193715763
+        },
+        {
+          "name": "dp.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00046372413635253906,
+          "relativeRms": 0.00020746898170330072
+        },
+        {
+          "name": "dp.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00046563148498535156,
+          "relativeRms": 0.00020827892635310222
+        },
+        {
+          "name": "onnx::Conv_8168",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00020688772201538086,
+          "relativeRms": 0.00020685241027781142
+        },
+        {
+          "name": "onnx::Conv_8171",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0001844167709350586,
+          "relativeRms": 0.00020713783219881906
+        },
+        {
+          "name": "onnx::Conv_8174",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00012183189392089844,
+          "relativeRms": 0.00020712559543507007
+        },
+        {
+          "name": "onnx::Conv_8177",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002435445785522461,
+          "relativeRms": 0.00020853296672373388
+        },
+        {
+          "name": "onnx::Conv_8180",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00023376941680908203,
+          "relativeRms": 0.0002071513644227436
+        },
+        {
+          "name": "onnx::Conv_8183",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002415776252746582,
+          "relativeRms": 0.00020783979417104674
+        },
+        {
+          "name": "onnx::Conv_8186",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00011113286018371582,
+          "relativeRms": 0.00020733951058915162
+        },
+        {
+          "name": "onnx::Conv_8189",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 5.996227264404297e-05,
+          "relativeRms": 0.00020823212471478376
+        },
+        {
+          "name": "onnx::Conv_8192",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 6.0111284255981445e-05,
+          "relativeRms": 0.00020690896095041495
+        },
+        {
+          "name": "onnx::Conv_8195",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0001214444637298584,
+          "relativeRms": 0.0002077202207931665
+        },
+        {
+          "name": "onnx::Conv_8198",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00023424625396728516,
+          "relativeRms": 0.00020720680987444884
+        },
+        {
+          "name": "onnx::Conv_8201",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002422332763671875,
+          "relativeRms": 0.00020704751179428414
+        },
+        {
+          "name": "onnx::Conv_8204",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0002359151840209961,
+          "relativeRms": 0.00020775894170421902
+        },
+        {
+          "name": "onnx::Conv_8207",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00024396181106567383,
+          "relativeRms": 0.00020671488502683913
+        },
+        {
+          "name": "onnx::Conv_8210",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 6.0558319091796875e-05,
+          "relativeRms": 0.00020731713324360972
+        },
+        {
+          "name": "onnx::Conv_8213",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 6.0364603996276855e-05,
+          "relativeRms": 0.00020740027386883237
+        },
+        {
+          "name": "onnx::Conv_8216",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00022643804550170898,
+          "relativeRms": 0.000207874373213561
+        },
+        {
+          "name": "onnx::Conv_8219",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0002345442771911621,
+          "relativeRms": 0.0002050323803160432
+        },
+        {
+          "name": "onnx::Conv_8222",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00024205446243286133,
+          "relativeRms": 0.00020807031919007677
+        },
+        {
+          "name": "onnx::Conv_8225",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0004061460494995117,
+          "relativeRms": 0.0002061118606022435
+        },
+        {
+          "name": "onnx::Conv_8228",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00022357702255249023,
+          "relativeRms": 0.00020691027245553584
+        },
+        {
+          "name": "onnx::Conv_8231",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00024384260177612305,
+          "relativeRms": 0.000207513083132598
+        },
+        {
+          "name": "onnx::Conv_8234",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 6.066262722015381e-05,
+          "relativeRms": 0.00020723284889211614
+        },
+        {
+          "name": "onnx::Conv_8237",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 6.1005353927612305e-05,
+          "relativeRms": 0.00020732276232537494
+        },
+        {
+          "name": "onnx::Conv_8240",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 9.581446647644043e-05,
+          "relativeRms": 0.0002072871202350352
+        },
+        {
+          "name": "onnx::Conv_8243",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00022137165069580078,
+          "relativeRms": 0.0002056645030926917
+        },
+        {
+          "name": "onnx::Conv_8246",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00023287534713745117,
+          "relativeRms": 0.00020743050162418233
+        },
+        {
+          "name": "onnx::Conv_8249",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00047266483306884766,
+          "relativeRms": 0.00020724996558515058
+        },
+        {
+          "name": "onnx::Conv_8252",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.00012177228927612305,
+          "relativeRms": 0.00020669707486272603
+        },
+        {
+          "name": "onnx::Conv_8255",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00040137767791748047,
+          "relativeRms": 0.00020824614390447927
+        },
+        {
+          "name": "onnx::Conv_8258",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 6.0051679611206055e-05,
+          "relativeRms": 0.00020708980596119512
+        },
+        {
+          "name": "onnx::Conv_8261",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00011032819747924805,
+          "relativeRms": 0.00021088600856553945
+        }
+      ]
+    },
+    {
+      "precision": "int8",
+      "file": "en_GB-northern_english_male-medium-int8weights.onnx",
+      "bytes": 16593862,
+      "sourceBytes": 63201294,
+      "ratio": 0.26255573184941433,
+      "sha256": "1e337da6304ad9bf2bb0368b90da54d77f7785564c65f75918248a751cf24c44",
+      "changedElements": 15605728,
+      "note": "Storage precision only. Float32 inference; no speed/memory reduction claimed.",
+      "weights": [
+        {
+          "name": "sid",
+          "shape": [
+            256,
+            192
+          ],
+          "maxAbs": 0.00412948802113533,
+          "relativeRms": 0.010440965792239
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.010691940784454346,
+          "relativeRms": 0.01079306253259738
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.007887110114097595,
+          "relativeRms": 0.008644258189917894
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0013573841424658895,
+          "relativeRms": 0.007247143588247763
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.003145180642604828,
+          "relativeRms": 0.012059322137717538
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0011746101081371307,
+          "relativeRms": 0.007812639435892853
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.0.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0023264512419700623,
+          "relativeRms": 0.00694138048411793
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.007189333438873291,
+          "relativeRms": 0.007561743444461484
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.004946708679199219,
+          "relativeRms": 0.013889271310211128
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0022333934903144836,
+          "relativeRms": 0.006853240534108895
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0025378428399562836,
+          "relativeRms": 0.007013016341045862
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0013781245797872543,
+          "relativeRms": 0.0067522764387660614
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.1.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0013771802186965942,
+          "relativeRms": 0.006940145766246011
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.00954580307006836,
+          "relativeRms": 0.009113354054546904
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.004788786172866821,
+          "relativeRms": 0.00690457341200764
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002000764012336731,
+          "relativeRms": 0.006768117021592218
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0020496249198913574,
+          "relativeRms": 0.0067703064660333155
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.001209855079650879,
+          "relativeRms": 0.006731734525144929
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.2.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0011795684695243835,
+          "relativeRms": 0.00668603198941288
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.013473689556121826,
+          "relativeRms": 0.010689303686713383
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.0051001012325286865,
+          "relativeRms": 0.008863228486988544
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002427801489830017,
+          "relativeRms": 0.006870420056036762
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0024045780301094055,
+          "relativeRms": 0.007076678334111219
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0012378096580505371,
+          "relativeRms": 0.006910522176049786
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.3.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0016413070261478424,
+          "relativeRms": 0.006913676938933941
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.012294769287109375,
+          "relativeRms": 0.007837466625284712
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.005082115530967712,
+          "relativeRms": 0.007681389191735405
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002527802251279354,
+          "relativeRms": 0.00687844972378808
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002526449039578438,
+          "relativeRms": 0.007079704044721707
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0012502726167440414,
+          "relativeRms": 0.006825146857373787
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.4.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0010966360569000244,
+          "relativeRms": 0.006746558003824062
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.emb_rel_k",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.007522523403167725,
+          "relativeRms": 0.008332913406372787
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.emb_rel_v",
+          "shape": [
+            1,
+            9,
+            96
+          ],
+          "maxAbs": 0.002528570592403412,
+          "relativeRms": 0.007603589245348981
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_q.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0026933997869491577,
+          "relativeRms": 0.006973649420817698
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_k.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0031418129801750183,
+          "relativeRms": 0.006956193992926818
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_v.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.001444302499294281,
+          "relativeRms": 0.0071460991331764355
+        },
+        {
+          "name": "enc_p.encoder.attn_layers.5.conv_o.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0013095438480377197,
+          "relativeRms": 0.006990350297394533
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.0.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0015855133533477783,
+          "relativeRms": 0.00758162529535715
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.0.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0016387440264225006,
+          "relativeRms": 0.009632976429961089
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.1.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0013591460883617401,
+          "relativeRms": 0.007653519734115888
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.1.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.0025249868631362915,
+          "relativeRms": 0.010004255408435957
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.2.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0017695426940917969,
+          "relativeRms": 0.007648292625228624
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.2.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.008561551570892334,
+          "relativeRms": 0.014132734394781568
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.3.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0016629658639431,
+          "relativeRms": 0.007833304259473766
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.3.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.006598711013793945,
+          "relativeRms": 0.012806636351962717
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.4.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.001719234511256218,
+          "relativeRms": 0.008088377157004091
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.4.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.004510201513767242,
+          "relativeRms": 0.013135915808880056
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.5.conv_1.weight",
+          "shape": [
+            768,
+            192,
+            3
+          ],
+          "maxAbs": 0.0017733406275510788,
+          "relativeRms": 0.008579432585559975
+        },
+        {
+          "name": "enc_p.encoder.ffn_layers.5.conv_2.weight",
+          "shape": [
+            192,
+            768,
+            3
+          ],
+          "maxAbs": 0.005491781979799271,
+          "relativeRms": 0.014607968746754414
+        },
+        {
+          "name": "enc_p.proj.weight",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.012914896011352539,
+          "relativeRms": 0.006702514376966659
+        },
+        {
+          "name": "dec.conv_pre.weight",
+          "shape": [
+            256,
+            192,
+            7
+          ],
+          "maxAbs": 0.005457576364278793,
+          "relativeRms": 0.013523765170949121
+        },
+        {
+          "name": "dec.ups.0.weight",
+          "shape": [
+            256,
+            128,
+            16
+          ],
+          "maxAbs": 0.00071632897015661,
+          "relativeRms": 0.020761674252625147
+        },
+        {
+          "name": "dec.ups.1.weight",
+          "shape": [
+            128,
+            64,
+            16
+          ],
+          "maxAbs": 0.0009593857685104012,
+          "relativeRms": 0.017680375135448442
+        },
+        {
+          "name": "dec.ups.2.weight",
+          "shape": [
+            64,
+            32,
+            8
+          ],
+          "maxAbs": 0.0016137100756168365,
+          "relativeRms": 0.01456495053373465
+        },
+        {
+          "name": "dec.resblocks.0.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            3
+          ],
+          "maxAbs": 0.008043557405471802,
+          "relativeRms": 0.012865546265549603
+        },
+        {
+          "name": "dec.resblocks.0.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            3
+          ],
+          "maxAbs": 0.008349282667040825,
+          "relativeRms": 0.012986159694617552
+        },
+        {
+          "name": "dec.resblocks.1.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            5
+          ],
+          "maxAbs": 0.00994211807847023,
+          "relativeRms": 0.015028769094710197
+        },
+        {
+          "name": "dec.resblocks.1.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            5
+          ],
+          "maxAbs": 0.006058506667613983,
+          "relativeRms": 0.01579899457012358
+        },
+        {
+          "name": "dec.resblocks.2.convs.0.weight",
+          "shape": [
+            128,
+            128,
+            7
+          ],
+          "maxAbs": 0.0033646151423454285,
+          "relativeRms": 0.016695717100347514
+        },
+        {
+          "name": "dec.resblocks.2.convs.1.weight",
+          "shape": [
+            128,
+            128,
+            7
+          ],
+          "maxAbs": 0.0064844898879528046,
+          "relativeRms": 0.01903022205510006
+        },
+        {
+          "name": "dec.resblocks.3.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            3
+          ],
+          "maxAbs": 0.008003100752830505,
+          "relativeRms": 0.011590882742833644
+        },
+        {
+          "name": "dec.resblocks.3.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            3
+          ],
+          "maxAbs": 0.007721126079559326,
+          "relativeRms": 0.011916184634627304
+        },
+        {
+          "name": "dec.resblocks.4.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            5
+          ],
+          "maxAbs": 0.006174981594085693,
+          "relativeRms": 0.013144553384195283
+        },
+        {
+          "name": "dec.resblocks.4.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            5
+          ],
+          "maxAbs": 0.007547721266746521,
+          "relativeRms": 0.012600309498569315
+        },
+        {
+          "name": "dec.resblocks.5.convs.0.weight",
+          "shape": [
+            64,
+            64,
+            7
+          ],
+          "maxAbs": 0.01001721527427435,
+          "relativeRms": 0.018204690983882107
+        },
+        {
+          "name": "dec.resblocks.5.convs.1.weight",
+          "shape": [
+            64,
+            64,
+            7
+          ],
+          "maxAbs": 0.009557336568832397,
+          "relativeRms": 0.017721511943607025
+        },
+        {
+          "name": "dec.resblocks.6.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            3
+          ],
+          "maxAbs": 0.006790265440940857,
+          "relativeRms": 0.010014317247687836
+        },
+        {
+          "name": "dec.resblocks.6.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            3
+          ],
+          "maxAbs": 0.006584495306015015,
+          "relativeRms": 0.009699855017473844
+        },
+        {
+          "name": "dec.resblocks.7.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            5
+          ],
+          "maxAbs": 0.005283083766698837,
+          "relativeRms": 0.011494554252524799
+        },
+        {
+          "name": "dec.resblocks.7.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            5
+          ],
+          "maxAbs": 0.006222590804100037,
+          "relativeRms": 0.010048296492338012
+        },
+        {
+          "name": "dec.resblocks.8.convs.0.weight",
+          "shape": [
+            32,
+            32,
+            7
+          ],
+          "maxAbs": 0.0074117183685302734,
+          "relativeRms": 0.011524001549077949
+        },
+        {
+          "name": "dec.resblocks.8.convs.1.weight",
+          "shape": [
+            32,
+            32,
+            7
+          ],
+          "maxAbs": 0.006922811269760132,
+          "relativeRms": 0.012432709802120285
+        },
+        {
+          "name": "dec.conv_post.weight",
+          "shape": [
+            1,
+            32,
+            7
+          ],
+          "maxAbs": 0.001028008759021759,
+          "relativeRms": 0.00928652323930778
+        },
+        {
+          "name": "flow.flows.0.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.000864565372467041,
+          "relativeRms": 0.006630869578643456
+        },
+        {
+          "name": "flow.flows.0.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.0039321184158325195,
+          "relativeRms": 0.0072534411904205945
+        },
+        {
+          "name": "flow.flows.2.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.0015060566365718842,
+          "relativeRms": 0.010086256634296964
+        },
+        {
+          "name": "flow.flows.2.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.007251828908920288,
+          "relativeRms": 0.006439577118971232
+        },
+        {
+          "name": "flow.flows.4.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.0007447488605976105,
+          "relativeRms": 0.006444207300582088
+        },
+        {
+          "name": "flow.flows.4.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.0036371424794197083,
+          "relativeRms": 0.0068492883592767275
+        },
+        {
+          "name": "flow.flows.6.pre.weight",
+          "shape": [
+            192,
+            96,
+            1
+          ],
+          "maxAbs": 0.0013870969414710999,
+          "relativeRms": 0.00944002914176693
+        },
+        {
+          "name": "flow.flows.6.post.weight",
+          "shape": [
+            96,
+            192,
+            1
+          ],
+          "maxAbs": 0.009008139371871948,
+          "relativeRms": 0.006500382442592041
+        },
+        {
+          "name": "dp.flows.3.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 0.0,
+          "relativeRms": 0.0
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0010558068752288818,
+          "relativeRms": 0.0024361043110170144
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.001359064131975174,
+          "relativeRms": 0.002630985238192822
+        },
+        {
+          "name": "dp.flows.3.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0016280785202980042,
+          "relativeRms": 0.0029316093851317867
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002591883996501565,
+          "relativeRms": 0.00755470096835484
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0019019395112991333,
+          "relativeRms": 0.007424951609195096
+        },
+        {
+          "name": "dp.flows.3.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002331729978322983,
+          "relativeRms": 0.007485340176618027
+        },
+        {
+          "name": "dp.flows.3.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.005725890398025513,
+          "relativeRms": 0.007531662411089123
+        },
+        {
+          "name": "dp.flows.5.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 1.4901161193847656e-08,
+          "relativeRms": 6.301503368740531e-09
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0013198815286159515,
+          "relativeRms": 0.00265437073652083
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0012816749513149261,
+          "relativeRms": 0.002855644738019796
+        },
+        {
+          "name": "dp.flows.5.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0012045521289110184,
+          "relativeRms": 0.003013650734553482
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0024803904816508293,
+          "relativeRms": 0.007467332478606985
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0018860548734664917,
+          "relativeRms": 0.007288691604029886
+        },
+        {
+          "name": "dp.flows.5.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.002073049545288086,
+          "relativeRms": 0.007718747745379627
+        },
+        {
+          "name": "dp.flows.5.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.004582930356264114,
+          "relativeRms": 0.007270295567574227
+        },
+        {
+          "name": "dp.flows.7.pre.weight",
+          "shape": [
+            192,
+            1,
+            1
+          ],
+          "maxAbs": 2.9103830456733704e-11,
+          "relativeRms": 3.8824537827862394e-11
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0012622624635696411,
+          "relativeRms": 0.002625656688117168
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0012177936732769012,
+          "relativeRms": 0.0027088236725409573
+        },
+        {
+          "name": "dp.flows.7.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0012114793062210083,
+          "relativeRms": 0.0028995536197977405
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0025195516645908356,
+          "relativeRms": 0.007784096450808065
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0024360092356801033,
+          "relativeRms": 0.00768215198707433
+        },
+        {
+          "name": "dp.flows.7.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0018543824553489685,
+          "relativeRms": 0.0071346264484098984
+        },
+        {
+          "name": "dp.flows.7.proj.weight",
+          "shape": [
+            29,
+            192,
+            1
+          ],
+          "maxAbs": 0.011409208178520203,
+          "relativeRms": 0.007630280805461526
+        },
+        {
+          "name": "dp.pre.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0025521591305732727,
+          "relativeRms": 0.007439660287567253
+        },
+        {
+          "name": "dp.proj.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0016212239861488342,
+          "relativeRms": 0.008106720924554429
+        },
+        {
+          "name": "dp.convs.convs_sep.0.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0014799684286117554,
+          "relativeRms": 0.0025688981878554365
+        },
+        {
+          "name": "dp.convs.convs_sep.1.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0014638658612966537,
+          "relativeRms": 0.0027231700259067325
+        },
+        {
+          "name": "dp.convs.convs_sep.2.weight",
+          "shape": [
+            192,
+            1,
+            3
+          ],
+          "maxAbs": 0.0018823116552084684,
+          "relativeRms": 0.002627478149514114
+        },
+        {
+          "name": "dp.convs.convs_1x1.0.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.005271613597869873,
+          "relativeRms": 0.0098449466632321
+        },
+        {
+          "name": "dp.convs.convs_1x1.1.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.005669355392456055,
+          "relativeRms": 0.009000755895395052
+        },
+        {
+          "name": "dp.convs.convs_1x1.2.weight",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.004939049482345581,
+          "relativeRms": 0.00792714544564618
+        },
+        {
+          "name": "onnx::Conv_8168",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0019972920417785645,
+          "relativeRms": 0.010903797254628785
+        },
+        {
+          "name": "onnx::Conv_8171",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.00286688469350338,
+          "relativeRms": 0.007830268671583561
+        },
+        {
+          "name": "onnx::Conv_8174",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.003314301371574402,
+          "relativeRms": 0.009732563902360835
+        },
+        {
+          "name": "onnx::Conv_8177",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.003478463739156723,
+          "relativeRms": 0.007496153389723464
+        },
+        {
+          "name": "onnx::Conv_8180",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.003183811902999878,
+          "relativeRms": 0.009085849752583952
+        },
+        {
+          "name": "onnx::Conv_8183",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.003821045160293579,
+          "relativeRms": 0.007438060816110398
+        },
+        {
+          "name": "onnx::Conv_8186",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.001152224838733673,
+          "relativeRms": 0.00853978377149965
+        },
+        {
+          "name": "onnx::Conv_8189",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0008055903017520905,
+          "relativeRms": 0.007197015526602149
+        },
+        {
+          "name": "onnx::Conv_8192",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0010312143713235855,
+          "relativeRms": 0.009813712442758603
+        },
+        {
+          "name": "onnx::Conv_8195",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0019113768357783556,
+          "relativeRms": 0.0073472993705813215
+        },
+        {
+          "name": "onnx::Conv_8198",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0026037562638521194,
+          "relativeRms": 0.009250681314631682
+        },
+        {
+          "name": "onnx::Conv_8201",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.003641560673713684,
+          "relativeRms": 0.007572135190287002
+        },
+        {
+          "name": "onnx::Conv_8204",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.003686875104904175,
+          "relativeRms": 0.009059781309559119
+        },
+        {
+          "name": "onnx::Conv_8207",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0035438239574432373,
+          "relativeRms": 0.0072055727529056115
+        },
+        {
+          "name": "onnx::Conv_8210",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0008613541722297668,
+          "relativeRms": 0.008218741058978187
+        },
+        {
+          "name": "onnx::Conv_8213",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.00057230144739151,
+          "relativeRms": 0.006358886478441811
+        },
+        {
+          "name": "onnx::Conv_8216",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0038487762212753296,
+          "relativeRms": 0.011458223542806302
+        },
+        {
+          "name": "onnx::Conv_8219",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.003660738468170166,
+          "relativeRms": 0.007417712730048922
+        },
+        {
+          "name": "onnx::Conv_8222",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0031425952911376953,
+          "relativeRms": 0.009584998369498781
+        },
+        {
+          "name": "onnx::Conv_8225",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.004446603357791901,
+          "relativeRms": 0.007745343305251423
+        },
+        {
+          "name": "onnx::Conv_8228",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0032561644911766052,
+          "relativeRms": 0.008999136079820471
+        },
+        {
+          "name": "onnx::Conv_8231",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.0028681159019470215,
+          "relativeRms": 0.007020522086594151
+        },
+        {
+          "name": "onnx::Conv_8234",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0008159716380760074,
+          "relativeRms": 0.008260933477245297
+        },
+        {
+          "name": "onnx::Conv_8237",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.0006846599280834198,
+          "relativeRms": 0.006403443736560888
+        },
+        {
+          "name": "onnx::Conv_8240",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0016460604965686798,
+          "relativeRms": 0.00989280805697426
+        },
+        {
+          "name": "onnx::Conv_8243",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.002231331542134285,
+          "relativeRms": 0.007190614534528845
+        },
+        {
+          "name": "onnx::Conv_8246",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0023913010954856873,
+          "relativeRms": 0.009025174936315238
+        },
+        {
+          "name": "onnx::Conv_8249",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.004119545686990023,
+          "relativeRms": 0.007225705927039447
+        },
+        {
+          "name": "onnx::Conv_8252",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0016344338655471802,
+          "relativeRms": 0.008578576328418623
+        },
+        {
+          "name": "onnx::Conv_8255",
+          "shape": [
+            384,
+            192,
+            1
+          ],
+          "maxAbs": 0.003967553377151489,
+          "relativeRms": 0.00711469598579497
+        },
+        {
+          "name": "onnx::Conv_8258",
+          "shape": [
+            384,
+            192,
+            5
+          ],
+          "maxAbs": 0.0006604865193367004,
+          "relativeRms": 0.008308929929229495
+        },
+        {
+          "name": "onnx::Conv_8261",
+          "shape": [
+            192,
+            192,
+            1
+          ],
+          "maxAbs": 0.001097649335861206,
+          "relativeRms": 0.007072104927042577
+        }
+      ]
+    }
+  ]
+}
