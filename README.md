@@ -8,6 +8,13 @@ wants a Brot voice, such as the Brotoid page and the Brotophone link.
 **Website: [bristorbrot.org](https://bristorbrot.org)** · Licence: **GPLv3** (see [LICENSES.md](LICENSES.md) for what is
 under what)
 
+## What to expect
+
+Brotvoice aims for a distinct English-speaking voice that sounds non-human. Doug finds the current result ideal for
+the Brot. A Bristorian orbit modulates the synthesis, but its audible contribution may be subtle or add little
+flavour; a unique perceptual benefit has not been established. That the voice suits the Brot is Doug's judgement of
+the sound, not a finding about the orbit.
+
 ## What is here
 
 - `voice/browser-client.js`, `voice/browser-worker.js`, `voice/speech.js`: the engine. A page asks for speech, a
@@ -36,7 +43,9 @@ under what)
 ## Licence
 
 Code is [GPLv3](LICENSE), because the phonemizer WebAssembly contains eSpeak NG (GPLv3) and the engine calls
-straight into it. The voice model keeps its own licence, CC BY-SA 4.0. Other included parts keep theirs. Copyright
+straight into it. The voice model keeps its own licence, CC BY-SA 4.0 for its finetuning data, **but it was finetuned
+from a base voice trained on non-commercial research data, so treat the model as for non-commercial use until that is
+resolved** (see [LICENSES.md](LICENSES.md)). Other included parts keep theirs. Copyright
 (c) 2026 Doug Bristor. [LICENSES.md](LICENSES.md) lists every file's terms.
 
 Brotvoice is a leaf: other projects use it, and nothing from it flows back into the MIT projects

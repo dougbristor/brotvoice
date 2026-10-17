@@ -15,4 +15,8 @@ trace the change back to its commit.
 - **Checked by:** the 12 text files here all verify against the manifest, and the five engine and attribution files
   are byte-identical to their working copies. All 21 hashes in the manifest equal both the voice list from the page
   builder and the list of the files staged for the host. The manifest check fails when one byte of a file is
-  changed (tried on a copy: `voice/speech.js` reported FAILED). No reader has reviewed the README yet.
+  changed (tried on a copy: `voice/speech.js` reported FAILED). Fable read the whole repository before it was published and checked the model's
+  base-voice licence at source (non-commercial research data), which I re-read at the Edinburgh page; the README and
+  LICENSES.md now say to treat the model as non-commercial. Fable also found that `voice/ATTRIBUTION.md` names parts
+  that are not in this build, which LICENSES.md now says. The README's paragraph on the Bristorian orbit and the voice
+  is Doug's wording, relayed by caro. Not yet read by anyone else.
