@@ -27,5 +27,6 @@ copied byte for byte, so no licence header has been added to them; this table is
   shipped set is the 21 files in `MANIFEST.sha256`.
 - **Source offer.** [SOURCE.md](SOURCE.md) is the Corresponding Source offer for the phonemizer: each served file with
   its hash, the pinned upstream source, and what is verified, inferred or not yet checked. The English-only data
-  selection script is in [`source/trim_phonemizer.py`](source/trim_phonemizer.py). Still open there: the six compiled
-  eSpeak data files are unverified until a native build is compared, and the archive copies need a published home.
+  selection script is in [`source/trim_phonemizer.py`](source/trim_phonemizer.py). The upstream archives are kept as assets
+  of the `source-20261101` release. Still open there: the six compiled eSpeak data files are unverified until a native
+  build is compared.

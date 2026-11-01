@@ -7,14 +7,14 @@ trace the change back to its commit.
   the commit.
 - **correction**: what was claimed before, what was wrong with it, and what made someone look.
 
-## 2026-11-01 · change · source offer for the phonemizer, worker brought up to date (local, not yet pushed)
+## 2026-11-01 · change · source offer for the phonemizer, worker brought up to date
 
 - **What:** `SOURCE.md` (each served phonemizer file with its hash, the pinned upstream source, and what is verified,
   inferred or unchecked); `source/trim_phonemizer.py` (verbatim); `voice/browser-worker.js` replaced whole by the
   fixed worker (sha256 `225bf065…`, caro's byte-final stamp; the repository's copy was older than the 2026-10-19 fix);
   `MANIFEST.sha256` line for the worker updated; `LICENSES.md` and `README.md` point at the source offer.
   `voice/ATTRIBUTION.md` is left as the build's copy and still matches the manifest.
-- **Asked:** Doug Bristor, 2026-11-01: publish the source for the GPL parts. Source packet and checks by caro.
+- **Asked:** Doug Bristor, 2026-11-01: publish the source for the GPL parts, keep copies of the upstream source on GitHub under their licences so the offer holds if upstream goes, and say plainly that this project adds nothing new to the phonemizer. Source packet and checks by caro. The six upstream archives (hashes in `SOURCE.md`, re-checked against caro's `SHA256SUMS` on push) are assets of the release `source-20261101`.
 - **Checked by:** the 12 text files verify against the manifest; the five phonemizer hashes in the manifest equal the
   served hashes in `SOURCE.md`; the trim reproduction (caro, 2026-11-01) matches the served files byte for byte; caro's
   browser parity run passed on the worker (274/274 plans, 4/4 lowercase-break changes, Firefox and Chromium).

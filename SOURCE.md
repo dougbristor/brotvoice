@@ -6,6 +6,13 @@ is inferred or unchecked it says so.
 
 Everything named below is public.
 
+## What this project adds to it: nothing new
+
+Brotvoice adds no engine, no new code and no new features to the phonemizer. It is a re-mediated copy of upstream's
+published build, repackaged for this site: the WASM is upstream's own binary, and the only changes are the data
+trimmed to English and a one-line export in the loader (both below, both reproducible). The phonemizer and its
+licences are upstream's; the credit for the engine is eSpeak NG's and the Piper and piper-wasm authors'.
+
 ## What is served
 
 In `lib/voice/` on the host (not in this repository; hashed in [`MANIFEST.sha256`](MANIFEST.sha256) and below):
@@ -51,21 +58,20 @@ In `lib/voice/` on the host (not in this repository; hashed in [`MANIFEST.sha256
 
 ## Archives
 
-Archive tarballs of every commit above, and the npm tarball, are kept by the project with SHA-256 hashes, so the source
-does not depend on the upstream repositories staying up.
-
-**Pending Doug's decision:** where they are published (a release asset or the project's server; not repository history,
-about 59 MB). Their hashes:
+So the source stays available if an upstream repository goes away, unmodified copies of every archive below are
+published with this repository as assets of the GitHub release
+[`source-20261101`](https://github.com/dougbristor/brotvoice/releases/tag/source-20261101). They are upstream's files,
+byte for byte, each under its own licence (the licence text is inside each archive); eSpeak NG is GPLv3. They are not
+in the repository's history. Check them against these hashes:
 
     482f1ace6a5ebce46c30e1a906daf9004fc6d16a760de647e1112273e1cdc27b  diffusion-studio_piper-wasm-69522c832bd52d7c16389e9a8aee568065027689.tar.gz
     37ebbabb010200be8ec26c61b770e93f964f4503a329d7d74c239a1a40051e43  rhasspy_espeak-ng-0f65aa301e0d6bae5e172cc74197d32a6182200f.tar.gz
     41c199da1355deec93eab6065be99d00b938dd452e78f282ab481db91657e4e4  rhasspy_espeak-ng-8593723f10cfd9befd50de447f14bf0a9d2a14a4.tar.gz
     7029b52aabc2512d36f4d98c6ede732c48a0e7128d0cd0e62379dfcee770038e  wide-video_piper-phonemize-cfff8e52ebaea37c7e953ae2d06b174acb827ac4.tar.gz
     8fba3b3abf51247e80d5b9b4305064a679bcab12ad2c6cd866e8c3fee6099e50  wide-video_piper-wasm-7a9170ab4b58c241e472fea8d6f67d0e5ca5ac21.tar.gz
-
-The npm tarball `piper-wasm-1.0.0.tgz` (9204429 bytes) is the registry's own file:
-
     e5be7f15b3ec42b09fca3616db2ce3e2cf83faacc9c291c400ccf48a9d85c803  piper-wasm-1.0.0.tgz
+
+`piper-wasm-1.0.0.tgz` (9204429 bytes) is the npm registry's own file.
 
 ## Scope
 
