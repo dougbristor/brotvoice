@@ -7,6 +7,16 @@ trace the change back to its commit.
   the commit.
 - **correction**: what was claimed before, what was wrong with it, and what made someone look.
 
+## 2026-11-01 · change · speaker-safety gate header recut
+
+- **What:** `voice/safe_chain.js` replaced whole by sonic's copy (sha256 `e32f53a1…`, was `15ab680f…`). Only the five
+  header comment lines changed: the internal names are gone and the header says what the file is, that all Brot sound
+  goes through `SonicSafe.dest(ctx)` and never `ctx.destination`, and the rules. `MANIFEST.sha256` line updated.
+- **Asked:** Doug Bristor; wording from git, edited and applied by sonic, who owns the file.
+- **Checked by:** sonic ran `safe_probe_run` and `safe_graph_check` on the result, both ALL PASS, with their planted
+  faults failing as they should; lines 6 onward are byte-identical to the previous file (re-diffed here). Nothing was played.
+- **Not changed:** a code comment further down still says "SAFE-A found", an internal label; it is sonic's line.
+
 ## 2026-11-01 · change · eSpeak data files verified by a native build
 
 - **What:** `SOURCE.md`: the eSpeak NG data row goes from inferred / six files unverified to verified. A native build of

@@ -1,8 +1,8 @@
-// safe_chain.js - the ONE way sonic makes a sound (T-178, Doug 10-13: sonic's earlier sound machine destroyed his laptop speaker caps).
-// Rules (insights' list, adopted): no feedback anywhere (no DelayNode / ConvolverNode / microphone / script node / loop), no drones (every note decays
-// to silence within 1 s, the same pitch at most every 500 ms), notes 200-3000 Hz, then ONE chain before the output: 4th-order high-pass 180 Hz,
-// 4th-order low-pass 3.2 kHz, compressor + hard clip, master gain that can never exceed 0.3. Every voice is osc -> gain -> pan -> chain -> out.
-// Nothing in this file may create a node from FORBIDDEN; safe_probe.html scans this very source for them and renders the worst case offline.
+// safe_chain.js - the speaker-safety gate. All sound from the Brot must go through SonicSafe.dest(ctx) and never straight to ctx.destination.
+// Added after an earlier sound engine damaged a laptop speaker. Rules: no feedback anywhere (no DelayNode, ConvolverNode, microphone, script node or loop),
+// no drones (every synthesised note decays to silence within 1 s, the same pitch at most every 500 ms), notes 200-3000 Hz, then ONE chain before the output:
+// 4th-order high-pass 180 Hz, 4th-order low-pass 3.2 kHz, compressor + hard clip, master gain that can never exceed 0.3. Synthesised voices are osc -> gain -> pan -> chain -> out;
+// sampled or spoken audio is buffer -> gain -> SonicSafe.dest(ctx), filtered once. Nothing in this file may create a node from FORBIDDEN; a test scans this very source for them and renders the worst case offline.
 (function (root) {
   const F_MIN = 200, F_MAX = 3000, VOL_MAX = 0.3, NOTE_MAX_S = 1.0, REPEAT_MS = 500, HP_HZ = 180, LP_HZ = 3200;
   const clampF = f => Math.max(F_MIN, Math.min(F_MAX, +f || F_MIN));
