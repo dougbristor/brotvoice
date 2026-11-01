@@ -7,6 +7,17 @@ trace the change back to its commit.
   the commit.
 - **correction**: what was claimed before, what was wrong with it, and what made someone look.
 
+## 2026-11-01 · change · eSpeak data files verified by a native build
+
+- **What:** `SOURCE.md`: the eSpeak NG data row goes from inferred / six files unverified to verified. A native build of
+  espeak-ng at `8593723f` was run by Doug's go (he ran it himself after the permission guard stopped the agent); its six
+  compiled files equal, byte for byte, the corresponding slices of the served `piper_phonemize.data` (`8b009e05…`).
+- **Checked by:** a script compared each of the six files, size and sha256, against the offsets in the trim manifest;
+  all six match (en_dict 71bd330b…, intonations 3f8af65f…, phondata 4e028895…, phondata-manifest 7b387af0…,
+  phonindex 3ca7b8fa…, phontab 886f3fa4…). A planted difference was not tried; the sizes and offsets also agree.
+- **Still not checked:** the piper-phonemize pin (inferred), emsdk 3.1.47 (stated), and whether the WASM rebuilds to the
+  same bytes (untested).
+
 ## 2026-11-01 · change · source offer for the phonemizer, worker brought up to date
 
 - **What:** `SOURCE.md` (each served phonemizer file with its hash, the pinned upstream source, and what is verified,

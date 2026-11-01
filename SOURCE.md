@@ -47,7 +47,7 @@ In `lib/voice/` on the host (not in this repository; hashed in [`MANIFEST.sha256
 | build instructions | github.com/wide-video/piper-wasm | `7a9170ab4b58c241e472fea8d6f67d0e5ca5ac21` | HEAD at publish |
 | piper-phonemize (the compiled program; MIT) | github.com/wide-video/piper-phonemize | `cfff8e52ebaea37c7e953ae2d06b174acb827ac4` | **Inferred.** The recipe clones without a pin; this was HEAD at publish and nothing came after |
 | eSpeak NG **engine** in the WASM | github.com/rhasspy/espeak-ng | `0f65aa301e0d6bae5e172cc74197d32a6182200f` | pinned by URL in piper-phonemize's `CMakeLists.txt` |
-| eSpeak NG **data** in `.data` | github.com/rhasspy/espeak-ng | `8593723f10cfd9befd50de447f14bf0a9d2a14a4` | **Inferred** the same way. **Partly verified:** the 8 `lang/gmw/en*` files match the source byte for byte. The 6 compiled files (`en_dict`, `intonations`, `phondata`, `phondata-manifest`, `phonindex`, `phontab`) are **not yet verified**; that needs a native build of espeak-ng, which is planned |
+| eSpeak NG **data** in `.data` | github.com/rhasspy/espeak-ng | `8593723f10cfd9befd50de447f14bf0a9d2a14a4` | **Verified (2026-11-01):** a native build of this commit (`./autogen.sh && ./configure && make`, no install; gcc 13.3.0, autoconf 2.71, automake 1.16.5, libtool 2.4.7) produces the six compiled files (`en_dict`, `intonations`, `phondata`, `phondata-manifest`, `phonindex`, `phontab`) byte for byte identical to the ones in the served `.data`, and the 8 `lang/gmw/en*` files match the source. The commit was first chosen by inference (the recipe clones without a pin); the match shows this commit reproduces the data, though it does not rule out other commits that give the same bytes |
 
 ## What is not known
 
