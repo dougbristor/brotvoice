@@ -29,10 +29,15 @@ function recipe(text,settings){
  if(r.voice!=='warm')r.quality='original';
  return {version:VERSION,text,...r};
 }
+// One piper_phonemize instance leaks wasm heap (fixed 16 MB) on every callMain: about 1/103 of it per call plus
+// 1/24600 per character, so it aborts after ~105 short or ~38 long calls and stays dead (caro, 2026-10-31,
+// investigation/brotoid_article_20261031). Count the load and make a fresh instance well before that.
+let phonemizerLoad=0,phonemizerData=null;
 async function initPhonemizer(){
- if(phonemizer)return;
- state('Loading the English pronunciation engine…');
- const data=await (await cached('vendor/phonemizer/piper_phonemize.data')).arrayBuffer();
+ if(phonemizer&&phonemizerLoad<40)return;
+ if(!phonemizer)state('Loading the English pronunciation engine…');
+ phonemizerData??=await (await cached('vendor/phonemizer/piper_phonemize.data')).arrayBuffer();
+ const data=phonemizerData.slice(0);phonemizer=null;phonemizerLoad=0;
  phonemizer=await createPhonemizer({
   locateFile:name=>asset('vendor/phonemizer/'+name),
   getPreloadedPackage:()=>data,
@@ -40,10 +45,16 @@ async function initPhonemizer(){
   printErr:line=>console.warn('Piper phonemizer:',line)
  });
 }
+// eSpeak reads ". " + a lowercase letter as a non-final stop, so "break size. i times j" ran on as one clause (fable/brotbot 10-29).
+// Give eSpeak a line break after that stop instead (the caption and words keep the space) unless it closes an ellipsis or an
+// abbreviation. Not a capital: "I" is read as the pronoun (aɪ), not the letter i (ˈaɪ). Not "\n\n" (drops the stop) or U+2029 (read "dot").
+const ABBR=/(?:^|[\s(])(?:\p{L}\.){2,}$|(?:^|[\s(])(?:etc|vs|cf|approx|viz|al|ca|resp|esp|incl|eq|eqs|fig|figs|ch|sec|no)\.$/iu;
+const sentenceBreak=t=>t.replace(/(?<!\.)\.\s+(?=\p{Ll})/gu,(m,at)=>ABBR.test(t.slice(0,at+1))?m:'.\n');
 function phonemizePart(text,config){
  if(!text.trim())return [];
- printed=[];
- phonemizer.callMain(['-l',config.espeak.voice,'--input',JSON.stringify([{text}]),'--espeak_data','/espeak-ng-data']);
+ printed=[];phonemizerLoad+=1+text.length/240;
+ try{phonemizer.callMain(['-l',config.espeak.voice,'--input',JSON.stringify([{text}]),'--espeak_data','/espeak-ng-data']);}
+ catch(e){phonemizer=null;throw Error('The English pronunciation engine stopped; please try again.');}
  const rows=printed.filter(x=>Array.isArray(x.phonemes)&&Array.isArray(x.phoneme_ids));
  if(!rows.length)throw Error('The English pronunciation engine returned no words.');
  const result=[];
@@ -59,7 +70,12 @@ function phonemizePart(text,config){
 async function plan(r,config){
  await initPhonemizer();
  const raw=r.pronunciation==='lot'?'bɹˈɒt':'bɹˈəʊt';
- const parts=r.text.replace(/\bbrot\b/gi,`[[${raw}]]`).split(/(\[\[.*?\]\])/s);
+ // Keep the project stem and its stress in BROT-oid; ordinary English guesses bro-toid.
+ // Cover plurals/possessives without changing the displayed text or unrelated words.
+ const parts=r.text.replace(/\b(brotoid(?:s|['’]s)?|brot)\b/gi,word=>{
+  const lower=word.toLowerCase(),suffix=lower==='brot'?'':'ɔɪd'+(lower==='brotoid'?'':'z');
+  return `[[${raw}${suffix}]]`;
+ }).split(/(\[\[.*?\]\])/s);
  const phonemes=[];let previousRaw=false;
  for(let i=0;i<parts.length;i++){
   let part=parts[i];
@@ -80,7 +96,17 @@ async function plan(r,config){
      part=part.slice(leading[0].length);
     }
    }
-   const next=phonemizePart(part,config);
+   // A fragment cut off before our override ends phrase-final, so eSpeak gives its last word the
+   // citation form: "A brotoid" said "ay brotoid", "to" said /tuː/. Phonemize it with a b-initial
+   // carrier noun in the override's place, then strip the carrier; fall back if the strip misses.
+   part=sentenceBreak(part);
+   let next;
+   if(parts[i+1]?.startsWith('[[')&&/[\p{L}\p{N}]\s+$/u.test(part)){
+    next=phonemizePart(part+'blot',config);
+    const last=next.at(-1)?.join('').match(/^(.*?) ?blˈɒt$/su);
+    if(last&&last[1])next[next.length-1]=[...last[1]];else next=null;
+   }
+   next??=phonemizePart(part,config);
    if(previousRaw&&next.length)phonemes.at(-1).push(...next.shift());
    phonemes.push(...next);previousRaw=false;
   }
@@ -88,7 +114,7 @@ async function plan(r,config){
  if(!phonemes.length||!phonemes.some(x=>x.length))throw Error('No pronounceable English words found.');
  return {recipe:r,clauses:phonemes.map(x=>x.join('')),phonemes,
   words:r.text.match(/[\p{L}\p{N}_]+(?:['’][\p{L}\p{N}_]+)*|[^\p{L}\p{N}_\s]/gu)||[],
-  pronunciation:{Brot:r.pronunciation==='lot'?'/brɒt/':'/brəʊt/'},model:VOICES[r.voice],
+  pronunciation:{Brot:r.pronunciation==='lot'?'/brɒt/':'/brəʊt/',Brotoid:r.pronunciation==='lot'?'/ˈbrɒtɔɪd/':'/ˈbrəʊtɔɪd/'},model:VOICES[r.voice],
   timing:'Phoneme order is exact for the browser planner; word times are estimates.'};
 }
 async function getVoice(name,quality='original'){

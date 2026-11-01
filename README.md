@@ -25,6 +25,7 @@ the sound, not a finding about the orbit.
 - `voice/safe_chain.js`: the output chain every sound passes through (high-pass and low-pass cuts, a limiter, a hard
   clip and a volume cap), kept after laptop speakers were damaged by an earlier sound engine.
 - `voice/ATTRIBUTION.md`, the licence texts and model card, and the manifests: where each part comes from.
+- [`SOURCE.md`](SOURCE.md) and `source/`: the source offer for the GPL phonemizer, with the script that trims its data.
 - [`MANIFEST.sha256`](MANIFEST.sha256): the SHA-256 of all 21 files of the voice as built, including the ones that
   are not in this repository (the model, the WebAssembly engines and the phoneme data). It records exactly which
   bytes were meant, so a copy of the voice anywhere can be checked against it:

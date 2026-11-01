@@ -8,7 +8,7 @@ copied byte for byte, so no licence header has been added to them; this table is
 | `voice/browser-client.js`, `voice/browser-worker.js`, `voice/speech.js` | The browser engine | GPLv3 (this repository) | Written for Doug Bristor in this project |
 | `voice/safe_chain.js` | The speaker-safe output chain | GPLv3 here; the same file may exist under other terms in other projects of the same owner | Written for Doug Bristor in this project |
 | `voice/vendor/ort/` (not in git) | ONNX Runtime Web 1.22.0 | MIT | github.com/microsoft/onnxruntime, tag v1.22.0 |
-| `voice/vendor/phonemizer/` (not in git) | Piper phonemizer WebAssembly, English data only | The wrapper is MIT; the compiled **eSpeak NG** inside is **GPLv3**; the whole is conveyed under GPLv3 | github.com/diffusion-studio/piper-wasm, github.com/wide-video/piper-phonemize, github.com/rhasspy/espeak-ng |
+| `voice/vendor/phonemizer/` (not in git); `source/` | Piper phonemizer WebAssembly, English data only; the trim script is in `source/` | The wrapper is MIT; the compiled **eSpeak NG** inside is **GPLv3**; the whole is conveyed under GPLv3 | github.com/diffusion-studio/piper-wasm, github.com/wide-video/piper-phonemize, github.com/rhasspy/espeak-ng |
 | `voice/vendor/world/` (not in git) | WORLD vocoder, the parts used | Modified BSD | github.com/mmorise/World |
 | `voice/models/` (not in git) | Voice model, northern_english_male (medium) | CC BY-SA 4.0 International for the finetuning data; the base voice's terms are open, see below | OpenSLR 83; huggingface.co/rhasspy/piper-voices |
 | `voice/models/*-fp16weights.onnx` (not in git) | The same model with weights stored at half precision | CC BY-SA 4.0 International, as a derivative; attribution and changes in `voice/models/compact-manifest.json` | made from the model above |
@@ -25,7 +25,7 @@ copied byte for byte, so no licence header has been added to them; this table is
 - **`voice/ATTRIBUTION.md` is the build's attribution, copied as it came.** It also names parts that are not in this
   build (a second voice and an int8 derivative) and points to working notes that are not in this repository. The
   shipped set is the 21 files in `MANIFEST.sha256`.
-- **Source offer.** When the binaries are added, the GPLv3 requires the corresponding source of the phonemizer to be
-  available alongside it, and the English-only data selection (`trim_phonemizer.py`) to be reproducible. That
-  script needs a home in this repository first. The upstream links above are the starting point; they are not yet a
-  checked source offer.
+- **Source offer.** [SOURCE.md](SOURCE.md) is the Corresponding Source offer for the phonemizer: each served file with
+  its hash, the pinned upstream source, and what is verified, inferred or not yet checked. The English-only data
+  selection script is in [`source/trim_phonemizer.py`](source/trim_phonemizer.py). Still open there: the six compiled
+  eSpeak data files are unverified until a native build is compared, and the archive copies need a published home.
